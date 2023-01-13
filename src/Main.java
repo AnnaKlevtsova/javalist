@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {public static int function1(List Mylist){
@@ -13,8 +14,9 @@ public class Main {public static int function1(List Mylist){
     return 0;
 }
     public static int function2(List Mylist){
-        for(int i = 9; i > -1; i--) {
-            System.out.println(i+1 + ") " + Mylist.get(i));
+    Collections.reverse(Mylist) ;
+       for(int i = 0; i < 10; i++) {
+            System.out.println(i + 1 + ") " + Mylist.get(i));
         }
         return 0;
     }
